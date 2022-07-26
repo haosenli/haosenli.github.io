@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Meta Tags -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;1,200;1,300;1,400&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="stylesheets/global_default.css" />
+    <link rel="stylesheet" href="stylesheets/about_me.css" />
+
+    <!-- Browser Settings -->
+    <link rel="icon" href="imgs/h-logo.png" />
+    <title>Haosen Li | Home</title>
+  </head>
+  <body class="container">
+    <!-- Light/Dark mode switch -->
+    <div class="darkmode-container">
+      <label class="darkmode-switch">
+        <input type="checkbox" id="dark-mode-toggle" />
+        <span class="slider round"></span>
+      </label>
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="16"
+        height="16"
+        fill="currentColor"
+        class="bi bi-moon-fill"
+        viewBox="0 0 16 16"
+      >
+        <path
+          d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z"
+        />
+      </svg>
+    </div>
+    <!-- Main Intro -->
+    <div class="container-fluid intro px-0">
+      <div class="row">
+        <!-- Pic -->
+        <div class="col-lg-3 align-self-center">
+          <figure class="my-auto profile-img d-none d-lg-block">
+            <img
+              class="img-fluid"
+              src="imgs/profile_img.png"
+              alt="A picture of myself."
+            />
+          </figure>
+        </div>
+        <!-- Description -->
+        <div class="col align-self-center" id="main-intro">
+          <h1 id="intro">Hi, I'm Haosen.</h1>
+          <h2 id="short-desc">An aspiring Software Engineer in Seattle, WA.</h2>
+          <p class="long-desc">
+            I am a student at the University of Washington studying Electrical
+            Engineering, concentrating in Embedded Computing Systems.
+          </p>
+          <p class="long-desc">
+            I strive to continuously improve myself through learning, and am
+            committed to use programming to make my life lazier.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Resume -->
+    <div class="container-fluid edu skills px-0">
+      <div class="row">
+        <!-- Education -->
+        <div class="col-sm-7 col-md-6 col-lg-4">
+          <h3>Education</h3>
+          <ul class="edu">
+            <li>
+              <span>
+                <div class="edu-main">University of Washington</div>
+                <div class="edu-sub"><i>Seattle, Washington</i></div>
+                <div class="edu-deg">
+                  <i>B.S. in Electrical Engineering</i>
+                </div>
+                <div class="edu-year">2019-2023</div>
+              </span>
+            </li>
+            <li>
+              <span>
+                <div class="edu-main">Shorecrest High School</div>
+                <div class="edu-sub"><i>Shoreline, Washington</i></div>
+                <div class="edu-year">2015-2019</div>
+              </span>
+            </li>
+          </ul>
+        </div>
+        <!-- Technical Projects -->
+        <div class="col">
+          <h3>Skills</h3>
+          <div class="lang">
+            <h4>Programming Languages & Related Experiences</h4>
+            <ul>
+              <li>Python</li>
+              <li>Java</li>
+              <li>JavaScript</li>
+              <li>C/C++</li>
+              <li>HTML/CSS</li>
+              <li>Bootstrap</li>
+              <li>Git</li>
+              <li>Bash</li>
+              <li>FreeRTOS</li>
+              <li>SystemVerilog</li>
+              <li>Intel DE1-SoC</li>
+              <li>Arduino</li>
+            </ul>
+          </div>
+          <div class="lang">
+            <h4>Natural Languages</h4>
+            <ul>
+              <li>English</li>
+              <li>Mandarin</li>
+              <li>Cantonese</li>
+              <li>French</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Hobbies/Interests -->
+    <div class="container-fluid hobbies px-0">
+      <div class="row">
+        <div class="col keyboard">
+          <h3 class="keyboard">Custom Mechanical Keyboards</h3>
+          <div class="row">
+            <figure class="col-lg-4 d-none d-lg-block">
+              <img
+                src="imgs/wallet-no-money.gif"
+                alt="No money"
+                class="img-fluid"
+              />
+            </figure>
+            <div class="col keyboard-desc align-self-center">
+              <p>
+                This custom keyboards hobby is strangely addicting. One moment
+                I'm just buying some switches to mod my keyboard with, and next
+                thing I know, I got enough switches to fit in more than 10
+                keyboards.
+              </p>
+              <p>
+                It's impractical, it's expensive, it's time-consuming, and
+                people will think you're insane for paying such prices for
+                <i>just</i> a keyboard. However, finding that perfect
+                combination of keyboard case design, keyboard plate material,
+                switches, keycaps, and lubricants in order to generate the most
+                pleasing aural and visual stimulation specifically tailored for
+                you is just oh-so-satisfying.
+              </p>
+              <p>
+                But... I won't deny it, I've spent way too much money in this
+                hobby.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <!-- Classical Music -->
+        <div class="col listening">
+          <h3 class="listening">Currently Listening</h3>
+          <p class="listening-desc">
+            I am an avid classical music listener as well as a beginner pianist.
+            I'm primarily into the classical piano repertoires (and sometimes
+            violin).
+          </p>
+          <p class="listening-desc">
+            My current listening obsession is Rachmaninov's Piano Concerto No.3.
+            This particular concerto captured my interest after listening to
+            Yunchan Lim's gold-medal winning performance of it in the 2022 Van
+            Cliburn Piano Competition. Hearing Yuncham's historical performance
+            of this composition once again made me realize how beautiful and
+            triumphant this concerto truly is. I have been on a months-long
+            journey to find my favorite Rachmaninov Piano Concerto No.3
+            performance/recording (they're all so good!). Besides Rachmaninov,
+            I'm also delving deeper into Beethoven's piano works. In particular,
+            his Piano Concerto No.3 & No.5.
+          </p>
+        </div>
+        <!-- Favorite Pianists -->
+        <div class="col">
+          <div class="fav-pianists">
+            <h3>Favorite Contemporary Pianists</h3>
+            <ul class="piano">
+              <li>
+                <span>
+                  <div class="piano-main">Lang Lang</div>
+                  <div class="piano-desc">
+                    My piano hero, he is a breathtaking pianist who has
+                    spectacular technical abilities as well as musical
+                    understanding. He is the reason why I got into classical
+                    piano music.
+                  </div>
+                </span>
+              </li>
+              <li>
+                <span>
+                  <div class="piano-main">Yuja Wang</div>
+                  <div class="piano-desc">
+                    She has phenomenal musical sensitivity as well as
+                    rhythmicity , I highly recommend her recording of the
+                    Rachmaninov Piano Concerto No.2 with the Mahler Chamber
+                    Orchestra. It is simply out of this world.
+                  </div>
+                </span>
+              </li>
+              <li>
+                <span>
+                  <div class="piano-main">Daniil Trifonov</div>
+                  <div class="piano-desc">
+                    If I had to describe his piano playing in one word, it would
+                    be <i>transcendental</i>. Daniil's performances are such a
+                    joy to listen to and watch. He has a recital at UW Meany
+                    Center on Nov. 8!
+                  </div>
+                </span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- Art -->
+      <div class="row">
+        <div class="col digital-art">
+          <h3>Digital Art</h3>
+          <p>
+            A hobby that I picked up on during quarantine is drawing. I enjoy
+            doing portrait-style drawings and sketches in my spare time.
+            Together with playing the piano, these two hobbies of mine allows
+            the technical side of my mind to rest and lets my creative side
+            fully express itself instead.
+          </p>
+          <footer>&#8594; <a href="">My Illustrations!</a></footer>
+          <div class="container-fluid">
+            <div class="row"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Projects -->
+    <div class="container-fluid projects px-0">
+      <h3 class="projects">Personal Projects</h3>
+      <!-- Project 1 -->
+      <div class="card mb-3 full-width-cards" style="width: 100%">
+        <div class="row g-0">
+          <div class="col-md-4 col-lg-3">
+            <img
+              src="imgs/graph.png"
+              class="img-fluid rounded-start project-card-img"
+              alt="..."
+            />
+          </div>
+          <div class="col">
+            <div class="card-body">
+              <h5 class="card-title">
+                <!-- replace github link later -->
+                <a
+                  href="https://github.com/haosenli/individualized-search-engine"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Individualized Search Engine</a
+                >
+              </h5>
+              <p class="card-text">
+                I've always been interested in knowing how Google's searching
+                algorithm knows what I want to search for. After learning about
+                graphs in my Data Structures and Algorithms course, I was
+                beginning to understand how a search engine
+                <i>could</i> work. Wanting to gain a deeper understanding on
+                this subject, this project was created.
+              </p>
+              <p class="card-text">
+                <small class="text-muted"
+                  ><a
+                    href="https://github.com/haosenli/individualized-search-engine"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >github/individualized-search-engine</a
+                  >
+                </small>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Project 2 -->
+      <div class="card mb-3 full-width-cards" style="width: 100%">
+        <div class="row g-0">
+          <div class="col-md-4 col-lg-3">
+            <img
+              src="imgs/client_server.png"
+              class="img-fluid rounded-start project-card-img"
+              alt="..."
+            />
+          </div>
+          <div class="col">
+            <div class="card-body">
+              <h5 class="card-title">
+                <!-- replace github link later -->
+                <a href="" target="_blank" rel="noopener noreferrer"
+                  >Chat Room Application</a
+                >
+              </h5>
+              <p class="card-text">
+                This project started when I wanted to learn about how we can
+                communicate with multiple computers using Python. I consider
+                this a stepping-stone for creating more complex applications in
+                the future (e.g. voice-chat/video-chat, online multiplayer
+                games, etc.). From learning about communication protocols to how
+                the client-server model functions, this project was very fun to
+                create, and I learned a lot from it.
+              </p>
+              <p class="card-text">
+                <small class="text-muted"
+                  ><a href="" target="_blank" rel="noopener noreferrer"
+                    >github/chat-room-app</a
+                  >
+                </small>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Project 3 -->
+      <div class="card mb-3 full-width-cards" style="width: 100%">
+        <div class="row g-0">
+          <div class="col-md-4 col-lg-3">
+            <img
+              src="imgs/discord.png"
+              class="img-fluid rounded-start project-card-img"
+              alt="..."
+            />
+          </div>
+          <div class="col">
+            <div class="card-body">
+              <h5 class="card-title">
+                <!-- replace github link later -->
+                <a href="" target="_blank" rel="noopener noreferrer"
+                  >Discord Bot Application</a
+                >
+              </h5>
+              <p class="card-text">
+                My Discord bot has great sentimental values to me because it's
+                been with me since the beginning of my Python learning journey.
+                Every time I learn something new about Python or computer
+                science in general, this is the project that I test it on, so
+                it's seen many feature upgrades over the year. This bot was
+                originally meant to just be multi-purpose bot, but in recent
+                months, the features have shifted to focus on artists and
+                movie/TV fans. The next step for this project is to implement my
+                search engine project into its database.
+              </p>
+              <p class="card-text">
+                <small class="text-muted"
+                  ><a href="" target="_blank" rel="noopener noreferrer"
+                    >YorBot.com</a
+                  >
+                </small>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer>&#8594; <a href="">More Projects!</a></footer>
+    </div>
+  </body>
+
+  <!-- JavaScript -->
+  <!-- jQuery, Popper.js, Bootstrap JS, custom JS -->
+  <script
+    src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+    integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js"
+    integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK"
+    crossorigin="anonymous"
+  ></script>
+  <script src="js/global_default.js"></script>
+  <script src="js/about_me.js"></script>
+</html>
