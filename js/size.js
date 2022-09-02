@@ -65,7 +65,6 @@ const textImages = document.querySelectorAll('.text-img-container');
 widthAdjustments(displayWrapper.offsetWidth);
 
 function widthAdjustments(width) {
-    console.log(width)
     // gt 1500
     if (width >= 1500) {
         for (let col3Group of col3Groups) {
