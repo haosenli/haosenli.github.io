@@ -1,0 +1,64 @@
+/* UI styling */
+.button { 
+    background-color: var(--button-color);
+    padding: var(--button-padding);
+    border-radius: var(--button-radius);
+    outline: var(--border-width) solid var(--transparent);
+    font-size: var(--s-font);
+    font-weight: 400;
+    cursor: pointer;
+    color: white;
+    user-select: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+    .button:hover {
+        color: white;
+    }
+
+    .button.active, .button:active {
+        background-color: white;
+        outline: var(--border-width) solid var(--button-color);
+        color: var(--button-color);
+    }
+
+    .button.official {
+        font-size: var(--xs-font);
+        padding: 3px 15px;
+        /* outline: var(--border-width) solid var(--light-bg-2); */
+    }
+
+    .button.official:active {
+        background-color: white;
+        outline: var(--border-width) solid var(--button-color);
+        color: var(--button-color);
+    }
+
+    .button.youtube {
+        font-size: var(--xs-font);
+        padding: 3px 15px;
+        /* outline: var(--border-width) solid var(--light-bg-2); */
+        background-color: var(--button-yt-color);
+    }
+
+    .button.youtube:active {
+        background-color: white;
+        outline: var(--border-width) solid var(--button-yt-color);
+        color: var(--button-yt-color);
+    }
+
+    .button.spotify {
+        font-size: var(--xs-font);
+        padding: 3px 15px;
+        /* outline: var(--border-width) solid var(--light-bg-2); */
+        background-color: var(--button-sp-color);
+        
+    }
+
+    .button.spotify:active {
+        background-color: white;
+        outline: var(--border-width) solid var(--button-sp-color);
+        color: var(--button-sp-color);
+    }

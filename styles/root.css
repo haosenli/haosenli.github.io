@@ -1,0 +1,89 @@
+:root {
+    /* assets */
+    --wallpaper: url("../imgs/background/abstract_1_light.jpg");
+    --polygons: url("../imgs/icons/polygons.svg");
+    /* text size */
+    --xs-font: 0.85rem;
+    --s-font: 1rem;
+    --m-font: 1.1rem;
+    --l-font: 1.5rem;
+    --xl-font: 2rem;
+    /* UI colors and sizing */
+    --button-color: #3269f3;
+    --button-yt-color: rgb(255, 0, 0);
+    --button-sp-color: rgb(30, 215, 96);
+    --button-padding: 3px 24px;
+    --button-radius: 100px;
+    --icon-size: 18px;
+    --icon-radius: 6px;
+    --icon-width-0: 48px;
+    --icon-width-1: 28px;
+    --icon-width-2: 36px;
+    --group-card-m-icon: 6rem;
+    --group-card-m-padding: 1.1rem;
+    --group-card-l-icon-h: auto;
+    --container-padding: 15px;
+    --box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 7%);
+    /* light mode colors */
+    --light-bg-1: rgba(255, 255, 255, 30%);
+    --light-bg-2: rgba(255, 255, 255, 45%);
+    --light-bg-3: rgba(255, 255, 255, 85%);
+    --light-text: rgb(70, 70, 74);
+    --light-text-muted: rgba(0, 0, 0, 65%);
+    --light-scrollbar: rgba(0, 0, 0, 42.5%);
+    --light-top-nav: rgba(235, 240, 255, 90%);
+    --invert-filter: invert(0%);
+    /* background colors and blur */
+    --gradient-1: #d996fe;
+    --gradient-2: #5d70ff;
+    --transparent: rgba(0, 0, 0, 0%);
+    --blur: blur(15px) saturate(160%) contrast(45%) brightness(140%);
+    --blur-2: blur(10px) saturate(160%) contrast(45%) brightness(140%);
+    /* scroll bar sizing */
+    --scrollbar-width: 8px;
+    --scrollbar-radius: 4px;
+    --scrollbar-padding: 3px;
+    /* app sizing */
+    --app-width: 1250px;
+    --app-height: 860px;
+    --app-radius: 15px;
+    --border-width-s: 1.25px;
+    --border-width: 2px;
+    --nav-item-border-width: 2.5px;
+    /* nav sizing */
+    --nav-height: 58px;
+    --nav-padding: 22.5px;
+    --nav-buttons: 15px;
+    --nav-button-width: calc(var(--sidebar-width) - var(--nav-padding));
+    --nav-menu-item-padding: calc(var(--nav-padding) - 6.5px) 28px;
+    /* profile sizing */
+    --profile-items-margin: 20px;
+    --profile-size: 35px;
+    /* sizebar sizing */
+    --sidebar-height: calc(var(--app-height) - var(--nav-height));
+    --sidebar-width: 240px;
+    --sidebar-padding: 24px;
+    /* content wrapper sizing */
+    --display-padding-h: 20px;
+    --display-padding-w: 40px;
+    --display-padding: var(--display-padding-h) var(--display-padding-w);
+    --display-margin-bottom: 5rem;
+    --display-height: var(--app-height);
+    --display-width: calc(var(--app-width) - var(--sidebar-width));
+    /* section styling */
+    --section-margin: 16px 0;
+    --sub-section-margin: 24px;
+    --footer-margin: 8px 0 0 0;
+}
+
+@media (max-width: 1250px) {
+    :root {
+        --app-width: 100vw;
+    }
+}
+
+@media (max-height: 860px) {
+    :root {
+        --app-height: 100vh;
+    }
+}

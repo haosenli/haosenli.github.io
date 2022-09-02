@@ -1,0 +1,16 @@
+.list-dropdown.l1 .list-container {
+    grid-template-columns: 2fr 1.25fr 0.7fr;
+} 
+
+.list-dropdown.l1.l2 .list-container {
+    grid-template-columns: 4fr 1fr;
+} 
+
+    .list-dropdown.l1.l2 .list-container .list-item-1 {
+        display: none;
+    }
+
+    .list-dropdown.l1.l2 .list-container .list-item-detail {
+        grid-template-columns: 4fr 1fr;
+    }
+

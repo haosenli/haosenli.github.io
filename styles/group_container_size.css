@@ -1,0 +1,47 @@
+
+/* col2 */
+.group-container.col2.c1 {
+    grid-template-columns: 1fr;
+}
+
+    .group-container.col2.c3 {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .group-container.col2.c4 {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 1rem;
+    }
+
+/* col3 */
+.group-container.col3.c2 {
+    grid-template-columns: 1fr 1fr;
+}
+
+    .group-container.col3.c2.c1 {
+        grid-template-columns: 1fr;
+    }
+
+    .group-container.col3.c4 {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 1rem;
+    }
+
+
+.group-container.h-scroll.c2 {
+    grid-template-columns: repeat(auto-fill, calc(50% - 0.65rem));
+    grid-auto-flow: column;
+    grid-auto-columns: calc(50% - 0.65rem);
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding-bottom: 1.75rem;
+}
+
+    .group-container.h-scroll.c2.c1 {
+        grid-template-columns: repeat(auto-fill, 100%);
+        grid-auto-flow: column;
+        grid-auto-columns: 100%;
+        overflow-x: auto;
+        overflow-y: hidden;
+        padding-bottom: 1.75rem;
+    }
