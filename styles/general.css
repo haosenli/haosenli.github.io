@@ -23,6 +23,7 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
+    /* backdrop-filter: brightness(80%) contrast(80%); */
 }
 
 h1, h2, h3, h4, h5, h6 {
