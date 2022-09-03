@@ -111,7 +111,8 @@
         border: var(--border-width) solid var(--light-text);
     }
 
-    .group-container .group-card-m:hover {
+    .group-container .group-card-m:hover,
+    .group-container .group-card-m:active {
         box-shadow: var(--box-shadow);
         max-height: 100%;
     }

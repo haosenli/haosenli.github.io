@@ -2,7 +2,8 @@
 const pages = document.querySelectorAll('.display');
 const buttons = document.querySelectorAll('.button');
 const sideBarContainers = document.querySelectorAll('#sidebar .category');
-const bottomNav = document.querySelectorAll('#bottom-nav .nav-menu-item');
+const bottomNav = document.querySelector('#bottom-nav');
+const bottomNavItems = document.querySelectorAll('#bottom-nav .nav-menu-item');
 const listContainers = document.querySelectorAll('.list-container');
 const listContainersS = document.querySelectorAll('.list-container-s');
 const mediumGroupCards = document.querySelectorAll('.group-card-m');
@@ -33,14 +34,14 @@ function updatePage(activePage) {
         let sub = sideBarContainers[i].querySelector('.subsection');
         cat.classList.remove('active');
         sub.classList.add('hidden');
-        bottomNav[i].classList.remove('active');
+        bottomNavItems[i].classList.remove('active');
     }
     pages[activePage].classList.add('active');
     let cat = sideBarContainers[activePage];
     let sub = sideBarContainers[activePage].querySelector('.subsection');
     cat.classList.add('active');
     sub.classList.remove('hidden');
-    bottomNav[activePage].classList.add('active');
+    bottomNavItems[activePage].classList.add('active');
     displayWrapper.scrollTop = pagePositions[activePage];
     activeTab = activePage;
 }
@@ -55,6 +56,11 @@ for (let button of buttons) {
     });
 }
 
+// bottom nav expand & collapse
+bottomNav.addEventListener('click', () => {
+    bottomNav.classList.toggle('collapsed');
+})
+
 // Add side bar & bottom nav event listeners
 for (let i = 0; i < sideBarContainers.length; i++) {
     let sideBarItem = sideBarContainers[i];
@@ -62,7 +68,7 @@ for (let i = 0; i < sideBarContainers.length; i++) {
     top.addEventListener('click', () => {
         updatePage(i);
     });
-    bottomNav[i].addEventListener('click', () => {
+    bottomNavItems[i].addEventListener('click', () => {
         updatePage(i);
     });
 }
@@ -118,13 +124,14 @@ let prevLeft = mainElement.style.left;
 // Make main element draggable
 // Code from: https://www.w3schools.com/howto/howto_js_draggable.asp
 var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
-mainElement.querySelector('#sidebar').onmousedown = dragMouseDown;
-mainElement.querySelector('#nav-ctrl').onmousedown = dragMouseDown;
+mainElement.querySelector('#sidebar').onmousedown = dragMouseDownMainElement;
+mainElement.querySelector('#nav-ctrl').onmousedown = dragMouseDownMainElement;
 for (let nav of mainElement.querySelectorAll('.top-nav')) {
-    nav.onmousedown = dragMouseDown;
+    nav.onmousedown = dragMouseDownMainElement;
 }
+bottomNav.onmousedown = dragMouseDownBottomNav;
 
-function dragMouseDown(e) {
+function dragMouseDownMainElement(e) {
     e = e || window.event;
     e.preventDefault();
     // get the mouse cursor position at startup:
@@ -132,10 +139,21 @@ function dragMouseDown(e) {
     pos4 = e.clientY;
     document.onmouseup = closeDragElement;
     // call a function whenever the cursor moves:
-    document.onmousemove = elementDrag;
+    document.onmousemove = mainElementDrag;
 }
 
-function elementDrag(e) {
+function dragMouseDownBottomNav(e) {
+    e = e || window.event;
+    e.preventDefault();
+    // get the mouse cursor position at startup:
+    pos3 = e.clientX;
+    pos4 = e.clientY;
+    document.onmouseup = closeDragElement;
+    // call a function whenever the cursor moves:
+    document.onmousemove = bottomNavDrag;
+}
+
+function mainElementDrag(e) {
     e = e || window.event;
     e.preventDefault();
     // calculate the new cursor position:
@@ -148,6 +166,21 @@ function elementDrag(e) {
     mainElement.style.left = (mainElement.offsetLeft - pos1) + "px";
     prevTop = mainElement.style.top;
     prevLeft = mainElement.style.left;
+}
+
+function bottomNavDrag(e) {
+    e = e || window.event;
+    e.preventDefault();
+    // calculate the new cursor position:
+    pos1 = pos3 - e.clientX;
+    pos2 = pos4 - e.clientY;
+    pos3 = e.clientX;
+    pos4 = e.clientY;
+    // set the element's new position:
+    bottomNav.style.top = (bottomNav.offsetTop - pos2) + "px";
+    bottomNav.style.left = (bottomNav.offsetLeft - pos1) + "px";
+    prevTop = bottomNav.style.top;
+    prevLeft = bottomNav.style.left;
 }
 
 function closeDragElement() {
