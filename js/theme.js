@@ -30,7 +30,8 @@ async function autoThemeMode() {
     while (autoTheme.classList.contains('active')) {
         let d = new Date();
         let hr = d.getHours();
-        if (hr >= 17) {
+        // dark mode at or after 6PM
+        if (hr >= 18) {
             darkThemeMode();
         } else {
             lightThemeMode();
