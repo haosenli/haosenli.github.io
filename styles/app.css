@@ -32,7 +32,8 @@ main.minimized {
     overflow: hidden;
     width: var(--sidebar-width);
     height: var(--nav-height);
-    transition: all 0.15s ease-in;
+    transition: width 0.15s ease-in,
+                height 0.15s ease-in;
 }
 
 main.minimized #nav-ctrl {
