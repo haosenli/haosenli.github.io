@@ -309,6 +309,7 @@
 
 .bottom-nav.collapsed {
     height: 3.75rem;
+    opacity: 75%;
 }
 
 .bottom-nav .nav-menu-item {
