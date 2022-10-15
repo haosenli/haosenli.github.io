@@ -19,21 +19,24 @@ main {
     grid-template-columns: var(--sidebar-width) 1fr;
     grid-template-rows: var(--nav-height)  1fr;
     /* resize: both; */
+    /* transition: width 0.1s ease-in,
+                height 0.1s ease-in; */
 }
 
 main.closed {
     overflow: hidden;
     width: 0;
     height: 0;
-    transition: all 0.15s ease-in;
+    transition: width 0.1s ease-in,
+                height 0.1s ease-in;
 }
 
 main.minimized {
     overflow: hidden;
     width: var(--sidebar-width);
     height: var(--nav-height);
-    transition: width 0.15s ease-in,
-                height 0.15s ease-in;
+    transition: width 0.1s ease-in,
+                height 0.1s ease-in;
 }
 
 main.minimized #nav-ctrl {

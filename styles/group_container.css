@@ -45,7 +45,7 @@
         border: var(--border-width) solid var(--light-bg-1);
         transition: all 0.15s ease-out;
     }
-
+    
     .group-container .group-card-m {
         /* display layout */
         display: grid;
