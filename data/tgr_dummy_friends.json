@@ -1,0 +1,41 @@
+{
+    "friends": [
+        {
+            "username": "alan.ly",
+            "netid": "4",
+            "icon": "https://cdn.discordapp.com/attachments/1034184646067486720/1057766744145539102/image.png"
+        },
+        {
+            "username": "haidang",
+            "netid": "6",
+            "icon": "https://cdn.discordapp.com/attachments/1034184646067486720/1057770381445972048/image.png"
+        },
+        {
+            "username": "alannnnn",
+            "netid": "4",
+            "icon": "https://media.licdn.com/dms/image/C5603AQERNWw2wbOJYA/profile-displayphoto-shrink_100_100/0/1647314550869?e=1677715200&v=beta&t=7BFmGWfylfhuGHVpoKr9WCgMls0v5Zx-kzye39Ky9CA"
+        },
+        {
+            "username": "haid",
+            "netid": "6",
+            "icon": "https://cdn.discordapp.com/attachments/1034184646067486720/1057770381445972048/image.png"
+        },
+        {
+            "username": "hoeli",
+            "netid": "1",
+            "icon": "https://media.licdn.com/dms/image/C5603AQFcfpzBSI61pg/profile-displayphoto-shrink_100_100/0/1659928232261?e=1677715200&v=beta&t=j8D8kDOmqnxws9xvR66GiVH_KQ3wmaSPXm3lGoNAum8"
+        }
+    ],
+    "requests": [
+        {
+            "username": "andrewkim",
+            "netid": "2",
+            "icon": "https://cdn.discordapp.com/attachments/1034184646067486720/1057766930418761838/andrew.jpg"
+        },
+        {
+            "username": "lilpete",
+            "netid": "3",
+            "icon": "https://cdn.discordapp.com/attachments/1034184646067486720/1057766930204864693/peter.jpg"
+        }
+    ]
+}
