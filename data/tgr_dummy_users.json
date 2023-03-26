@@ -1,0 +1,181 @@
+[
+    {
+        "details": {
+            "user_id": "6fd6d216-82e6-49b8-82e3-4992416d4d50",
+            "fullname": "li, haosen",
+            "username": "hoeli",
+            "profile_icon": "https://cdn.discordapp.com/avatars/706310789241241613/7eb79671837f009c9ca20a5de5899176.webp"
+        },
+        "contacts": {
+            "email": "hoeli@uw.edu",
+            "phone": "206-023-1234"
+        },
+        "streak": {
+            "days": 4,
+            "emoji": "\ud83d\ude0a"
+        },
+        "friends": [
+            {
+                "user_id": "6fd6d216-82e6-49b8-82e3-4992416d4d50",
+                "fullname": "li, haosen",
+                "username": "hoeli",
+                "profile_icon": "https://cdn.discordapp.com/avatars/706310789241241613/7eb79671837f009c9ca20a5de5899176.webp"
+            },
+            {
+                "user_id": "6fd6d216-82e6-49b8-82e3-4992416d4d50",
+                "fullname": "ly, alan",
+                "username": "Alannnn",
+                "profile_icon": "https://cdn.discordapp.com/avatars/220355980246908929/66abe18f3f18b78600ff8fe6719d2b9f.webp"
+            },
+            {
+                "user_id": "6fd6d216-82e6-49b8-82e3-4992416d4d50",
+                "fullname": "kim, andrew",
+                "username": "minsung",
+                "profile_icon": "https://cdn.discordapp.com/avatars/564634987270242354/0ef0008a19bec8c33336448e066b67fc.webp"
+            }
+        ]
+    },
+    {
+        "details": {
+            "user_id": "6fd6d216-82e6-49b8-82e3-4992416d4d50",
+            "fullname": "tran, peter",
+            "username": "Lil Pete",
+            "profile_icon": "https://cdn.discordapp.com/avatars/233717632837222400/4913615b121b70ae259cd6d37c38b635.webp"
+        },
+        "contacts": {
+            "email": "lilpete@uw.edu",
+            "phone": "206-123-1234"
+        },
+        "streak": {
+            "days": 14,
+            "emoji": "\ud83d\udd25"
+        },
+        "friends": []
+    },
+    {
+        "details": {
+            "user_id": "6fd6d216-82e6-49b8-82e3-4992416d4d50",
+            "fullname": "ly, alan",
+            "username": "Alannnn",
+            "profile_icon": "https://cdn.discordapp.com/avatars/220355980246908929/66abe18f3f18b78600ff8fe6719d2b9f.webp"
+        },
+        "contacts": {
+            "email": "alannnn@uw.edu",
+            "phone": "206-223-1234"
+        },
+        "streak": {
+            "days": 24,
+            "emoji": "\ud83d\ude0a"
+        },
+        "friends": [
+            {
+                "user_id": "6fd6d216-82e6-49b8-82e3-4992416d4d50",
+                "fullname": "li, haosen",
+                "username": "hoeli",
+                "profile_icon": "https://cdn.discordapp.com/avatars/706310789241241613/7eb79671837f009c9ca20a5de5899176.webp"
+            },
+            {
+                "user_id": "6fd6d216-82e6-49b8-82e3-4992416d4d50",
+                "fullname": "le, anthony",
+                "username": "xorxer",
+                "profile_icon": "https://cdn.discordapp.com/avatars/212774023912882177/00b043d84edfcc273a0006e7bf8c27f2.webp"
+            }
+        ]
+    },
+    {
+        "details": {
+            "user_id": "6fd6d216-82e6-49b8-82e3-4992416d4d50",
+            "fullname": "dang, hai",
+            "username": "haidef",
+            "profile_icon": "https://cdn.discordapp.com/avatars/216028595380813825/b868936dcb1197b4f2f036b660ffc031.webp"
+        },
+        "contacts": {
+            "email": "haidef@uw.edu",
+            "phone": "206-323-1234"
+        },
+        "streak": {
+            "days": 43,
+            "emoji": "\ud83d\udd25"
+        },
+        "friends": [
+            {
+                "user_id": "6fd6d216-82e6-49b8-82e3-4992416d4d50",
+                "fullname": "kim, andrew",
+                "username": "minsung",
+                "profile_icon": "https://cdn.discordapp.com/avatars/564634987270242354/0ef0008a19bec8c33336448e066b67fc.webp"
+            }
+        ]
+    },
+    {
+        "details": {
+            "user_id": "6fd6d216-82e6-49b8-82e3-4992416d4d50",
+            "fullname": "kim, andrew",
+            "username": "minsung",
+            "profile_icon": "https://cdn.discordapp.com/avatars/564634987270242354/0ef0008a19bec8c33336448e066b67fc.webp"
+        },
+        "contacts": {
+            "email": "minsung@uw.edu",
+            "phone": "206-423-1234"
+        },
+        "streak": {
+            "days": 4,
+            "emoji": "\ud83d\ude0a"
+        },
+        "friends": [
+            {
+                "user_id": "6fd6d216-82e6-49b8-82e3-4992416d4d50",
+                "fullname": "li, haosen",
+                "username": "hoeli",
+                "profile_icon": "https://cdn.discordapp.com/avatars/706310789241241613/7eb79671837f009c9ca20a5de5899176.webp"
+            }
+        ]
+    },
+    {
+        "details": {
+            "user_id": "6fd6d216-82e6-49b8-82e3-4992416d4d50",
+            "fullname": "tran, steven",
+            "username": "SchmoopTheGuy",
+            "profile_icon": "https://cdn.discordapp.com/avatars/232655252799619072/ce5896316b9956f2ebbb8ff7fbbfe48f.webp"
+        },
+        "contacts": {
+            "email": "schmooptheguy@uw.edu",
+            "phone": "206-523-1234"
+        },
+        "streak": {
+            "days": 2,
+            "emoji": "\ud83d\udd25"
+        },
+        "friends": [
+            {
+                "user_id": "6fd6d216-82e6-49b8-82e3-4992416d4d50",
+                "fullname": "kim, andrew",
+                "username": "minsung",
+                "profile_icon": "https://cdn.discordapp.com/avatars/564634987270242354/0ef0008a19bec8c33336448e066b67fc.webp"
+            }
+        ]
+    },
+    {
+        "details": {
+            "user_id": "6fd6d216-82e6-49b8-82e3-4992416d4d50",
+            "fullname": "le, anthony",
+            "username": "xorxer",
+            "profile_icon": "https://cdn.discordapp.com/avatars/212774023912882177/00b043d84edfcc273a0006e7bf8c27f2.webp"
+        },
+        "contacts": {
+            "email": "xorxer@uw.edu",
+            "phone": "206-623-1234"
+        },
+        "streak": {
+            "days": 6,
+            "emoji": "\ud83d\ude0a"
+        },
+        "friends": [
+            {
+                "user_id": "6fd6d216-82e6-49b8-82e3-4992416d4d50",
+                "fullname": "tran, steven",
+                "username": "SchmoopTheGuy",
+                "profile_icon": "https://cdn.discordapp.com/avatars/232655252799619072/ce5896316b9956f2ebbb8ff7fbbfe48f.webp"
+            }
+        ]
+    }
+    ]
