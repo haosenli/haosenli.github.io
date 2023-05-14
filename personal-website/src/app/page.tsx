@@ -1,38 +1,40 @@
 "use client"; // Consider if it is possible for this to be in AppDock instead.
 
-import { useState } from "react";
+import { Dispatch, useState } from "react";
 import styles from "./page.module.css";
 
 // Components
-import AppIcon from "../components/AppIcon";
+import AppIcons from "../components/AppIcons";
 import AppDock from "../components/AppDock";
+import Desktop from "../components/Desktop";
 
-// Apps Components
-import Notes from "../components/Apps/Notes";
+interface activeApps {
+    [key: string]: boolean;
+}
+interface setActiveApps {
+    [key: string]: Dispatch<React.SetStateAction<boolean>>;
+}
 
 export default function Home() {
-    // React Hooks for each AppIcon
+    // React State Hooks for each AppIcon
     const [activeAppNotes, setActiveAppNotes] = useState(false);
 
-    // AppIcon Instantiations
-    const notesApp: React.ReactNode = (
-        <AppIcon
-            imageSrc="/app-icons/notes.png"
-            altText="Note App that contains information about me"
-            activeApp={activeAppNotes}
-            setActiveApp={setActiveAppNotes}
-        />
-    );
-
-    // Add AppIcons to array
-    const appComponents: React.ReactNode[] = [notesApp, notesApp];
-
-    // Apps Instantiations
+    const activeApps: activeApps = {
+        notes: activeAppNotes,
+    };
+    const setActiveApps: setActiveApps = {
+        notes: setActiveAppNotes,
+    };
 
     return (
         <main className={styles.main}>
-            <Notes />
-            <AppDock appComponents={appComponents} />
+            <Desktop />
+            <AppDock>
+                <AppIcons
+                    activeApps={activeApps}
+                    setActiveApps={setActiveApps}
+                />
+            </AppDock>
         </main>
     );
 }

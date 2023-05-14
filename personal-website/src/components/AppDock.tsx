@@ -1,16 +1,18 @@
-import React from "react";
-
+// Stylesheet import
 import styles from "./AppDock.module.css";
 
+// React imports
+import { Children, ReactNode } from "react";
+
 interface Props {
-    appComponents: React.ReactNode[];
+    children: ReactNode;
 }
 
-export default function AppDock({ appComponents }: Props) {
+export default function AppDock({ children }: Props) {
     return (
         <div className={styles.dockContainer}>
             <nav className={styles.appDock}>
-                {React.Children.map(appComponents, (component) => {
+                {Children.map(children, (component) => {
                     return component;
                 })}
             </nav>

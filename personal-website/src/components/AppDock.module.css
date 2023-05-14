@@ -1,6 +1,6 @@
 .appDock {
-    --icon-size: 4.125rem;
-    --padding-size: 0.675rem;
+    --icon-size: 3.5rem;
+    --padding-size: 0.8rem;
     --padding-bottom: 0.4rem;
     /* Size */
     height: calc(
@@ -16,7 +16,7 @@
     /* Display */
     display: flex;
     flex-direction: row;
-    gap: calc(1.125 * var(--padding-size));
+    gap: calc(1.5 * var(--padding-size));
     /* Glassmorphism */
     background: rgba(0, 0, 0, 0.15);
     box-shadow: 0 8px 32px 0 rgba(41, 41, 42, 0.37);

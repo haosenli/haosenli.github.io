@@ -1,10 +1,17 @@
 // Stylesheet import
-import styles from "./Notes.module.css";
+import styles from "./Desktop.module.css";
 
 // React imports
-import { useState } from "react";
+import { ReactNode, useState } from "react";
 
-export default function Notes() {
+// Component imports
+// import Notes from "../components/apps/Notes";
+
+interface Props {
+    children: ReactNode;
+}
+
+export default function Desktop() {
     const [x, setX] = useState(0);
     const [y, setY] = useState(0);
     const [mouseDownX, setMouseDownX] = useState(0);
@@ -29,7 +36,7 @@ export default function Notes() {
 
     return (
         <div
-            className={styles.draggableContainer}
+            className={styles.desktop}
             onMouseUp={handleMouseUp}
             onMouseMove={handleMouseMove}
         >

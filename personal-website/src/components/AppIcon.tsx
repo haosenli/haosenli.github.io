@@ -1,12 +1,17 @@
+// Stylesheet import
 import style from "./AppIcon.module.css";
 
+// React imports
+import { Dispatch } from "react";
+
+// Next imports
 import Image from "next/image";
 
 interface Props {
     imageSrc: string;
     altText: string;
     activeApp: boolean;
-    setActiveApp: React.Dispatch<React.SetStateAction<boolean>>;
+    setActiveApp: Dispatch<React.SetStateAction<boolean>>;
 }
 
 export default function AppIcon({
