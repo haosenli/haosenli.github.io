@@ -1,0 +1,56 @@
+.appDock {
+    --icon-size: 4.125rem;
+    --padding-size: 0.675rem;
+    --padding-bottom: 0.4rem;
+    /* Size */
+    height: calc(
+        var(--icon-size) + 2 * var(--padding-size) + var(--padding-bottom)
+    );
+    max-width: calc(
+        20 * (var(--padding-size) + var(--icon-size)) + var(--padding-size)
+    );
+    /* Styling */
+    padding: var(--padding-size);
+    padding-bottom: calc(var(--padding-bottom) + var(--padding-size));
+    border-radius: 1.5rem;
+    /* Display */
+    display: flex;
+    flex-direction: row;
+    gap: calc(1.125 * var(--padding-size));
+    /* Glassmorphism */
+    background: rgba(0, 0, 0, 0.15);
+    box-shadow: 0 8px 32px 0 rgba(41, 41, 42, 0.37);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border: var(--border);
+}
+
+.dockContainer {
+    --padding-size: 1rem;
+    /* Position */
+    position: absolute;
+    bottom: calc(var(--padding-size) / 2);
+    left: calc(var(--padding-size) / 2);
+    right: calc(var(--padding-size) / 2);
+    margin-left: auto;
+    margin-right: auto;
+    /* Display */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+/* Non-touch devices */
+@media (hover: hover) and (pointer: fine) {
+}
+
+@media (prefers-reduced-motion) {
+}
+
+/* Mobile */
+@media (max-width: 700px) {
+}
+
+/* Tablet and Smaller Desktop */
+@media (min-width: 701px) and (max-width: 1120px) {
+}
