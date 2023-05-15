@@ -1,11 +1,11 @@
-"use client"; // Consider if it is possible for this to be in AppDock instead.
+"use client";
 
 import { Dispatch, useState } from "react";
 import styles from "./page.module.css";
 
 // Components
-import AppIcons from "../components/AppIcons";
-import AppDock from "../components/AppDock";
+import AppIcons from "../components/Dock/AppIcons";
+import AppDock from "../components/Dock/AppDock";
 import Desktop from "../components/Desktop";
 
 interface activeApps {

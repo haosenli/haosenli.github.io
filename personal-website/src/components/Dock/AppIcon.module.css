@@ -1,3 +1,7 @@
+.iconContainerBounce {
+    animation-name: bounce;
+}
+
 .appIcon {
     display: flex;
     flex-direction: column;
@@ -5,8 +9,17 @@
     user-select: none;
 }
 
+.appIconOverlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    aspect-ratio: 1/1;
+    border-radius: 0.75rem;
+}
+
 .activeDot {
-    --dot-diameter: 0.3rem;
+    --dot-diameter: 0.25rem;
     height: var(--dot-diameter);
     width: var(--dot-diameter);
     background-color: #ffffff83;
@@ -16,5 +29,5 @@
     transition-duration: 0.06s;
     /* Position */
     position: absolute;
-    bottom: var(--dot-diameter);
+    bottom: calc(var(--dot-diameter) * 2 / 3);
 }

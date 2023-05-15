@@ -1,7 +1,7 @@
 .appDock {
     --icon-size: 3.5rem;
     --padding-size: 0.8rem;
-    --padding-bottom: 0.4rem;
+    --padding-bottom: 0.25rem;
     /* Size */
     height: calc(
         var(--icon-size) + 2 * var(--padding-size) + var(--padding-bottom)
@@ -22,7 +22,7 @@
     box-shadow: 0 8px 32px 0 rgba(41, 41, 42, 0.37);
     backdrop-filter: blur(15px);
     -webkit-backdrop-filter: blur(15px);
-    border: var(--border);
+    border: var(--app-border);
 }
 
 .dockContainer {

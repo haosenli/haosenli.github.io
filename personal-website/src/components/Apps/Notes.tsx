@@ -2,52 +2,60 @@
 import styles from "./Notes.module.css";
 
 // React imports
-import { useState } from "react";
+import { Dispatch, MouseEvent } from "react";
 
-export default function Notes() {
-    const [x, setX] = useState(0);
-    const [y, setY] = useState(0);
-    const [mouseDownX, setMouseDownX] = useState(0);
-    const [mouseDownY, setMouseDownY] = useState(0);
-    const [dragEnable, setDragEnable] = useState(false);
+// Component imports
+import NavButtons from "../Navigation/NavButtons";
 
-    const handleMouseDown = (e: any) => {
-        setMouseDownX(e.clientX - x);
-        setMouseDownY(e.clientY - y);
-        setDragEnable(true);
-    };
-    const handleMouseMove = (e: any) => {
-        if (dragEnable) {
-            setX(e.clientX - mouseDownX);
-            setY(e.clientY - mouseDownY);
-        }
-    };
-    const handleMouseUp = () => {
-        setDragEnable(false);
-    };
-    // Add touch handler too
+interface Props {
+    x: number;
+    y: number;
+    appFocus: boolean;
+    handleMouseDown: (e: MouseEvent) => void;
+    setNavClick: Dispatch<React.SetStateAction<boolean>>;
+}
 
+export default function Notes({
+    x,
+    y,
+    appFocus,
+    handleMouseDown,
+    setNavClick,
+}: Props) {
+    const handleClose = (e: MouseEvent) => {};
+    const handleMinimize = (e: MouseEvent) => {};
+    const handleMaximize = (e: MouseEvent) => {};
     return (
         <div
-            className={styles.draggableContainer}
-            onMouseUp={handleMouseUp}
-            onMouseMove={handleMouseMove}
+            className={styles.notesApp}
+            style={{
+                userSelect: "none",
+                position: "absolute",
+                left: x,
+                top: y,
+            }}
         >
-            <div
-                style={{
-                    position: "absolute",
-                    left: x,
-                    top: y,
-                    userSelect: "none",
-                    backgroundColor: "white",
-                    color: "black",
-                }}
-            >
-                <nav onMouseDown={handleMouseDown}>
-                    Top Nav
-                    <p>big</p>
+            <div className={styles.flexColumn} onMouseDown={handleMouseDown}>
+                <nav className={styles.notesNav}>
+                    <div className={styles.navContent}>
+                        <div>
+                            <NavButtons
+                                isActive={appFocus}
+                                handleClose={handleClose}
+                                handleMinimize={handleMinimize}
+                                handleMaximize={handleMaximize}
+                                setNavClick={setNavClick}
+                            ></NavButtons>
+                        </div>
+                    </div>
                 </nav>
-                <div>Body</div>
+                <div className={styles.notesList}></div>
+            </div>
+            <div className={styles.flexColumn} onMouseDown={handleMouseDown}>
+                <nav className={styles.notesNav}>
+                    <div className={styles.navContent}></div>
+                </nav>
+                <div className={styles.notesContent}></div>
             </div>
         </div>
     );

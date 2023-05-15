@@ -1,5 +1,8 @@
 :root {
-    --border: 1px solid rgba(255, 255, 255, 0.18);
+    --app-border: 1px solid rgba(255, 255, 255, 0.18);
+    --app-border-radius: 0.6rem;
+    --nav-padding: 0.6rem;
+    --nav-content-height: 2.1rem;
     --font-mono: ui-monospace, Menlo, Monaco, "Cascadia Mono", "Segoe UI Mono",
         "Roboto Mono", "Oxygen Mono", "Ubuntu Monospace", "Source Code Pro",
         "Fira Mono", "Droid Sans Mono", "Courier New", monospace;

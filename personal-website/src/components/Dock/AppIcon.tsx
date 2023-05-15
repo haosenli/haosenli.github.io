@@ -1,8 +1,8 @@
 // Stylesheet import
-import style from "./AppIcon.module.css";
+import styles from "./AppIcon.module.css";
 
 // React imports
-import { Dispatch } from "react";
+import { Dispatch, useState } from "react";
 
 // Next imports
 import Image from "next/image";
@@ -20,13 +20,24 @@ export default function AppIcon({
     activeApp,
     setActiveApp,
 }: Props) {
-    function handleClick() {
-        setActiveApp(true);
-    }
+    const [clicked, setClicked] = useState(false);
+
     return (
-        <div className={style.appIcon}>
+        <div className={styles.appIcon}>
             <figure
-                onClick={handleClick}
+                onClick={() => {
+                    setActiveApp(true);
+                }}
+                onMouseDown={() => {
+                    setClicked(true);
+                }}
+                onMouseUp={() => {
+                    setClicked(false);
+                }}
+                onMouseLeave={() => {
+                    setClicked(false);
+                }}
+                className={styles.iconContainer}
                 style={{
                     height: "100%",
                     aspectRatio: "1/1",
@@ -39,9 +50,15 @@ export default function AppIcon({
                     fill={true}
                     priority={true}
                 />
+                <figure
+                    className={styles.appIconOverlay}
+                    style={{
+                        backgroundColor: clicked ? "#0000008c" : "",
+                    }}
+                ></figure>
             </figure>
             <figure
-                className={style.activeDot}
+                className={styles.activeDot}
                 style={{
                     opacity: activeApp ? "100%" : "0%",
                 }}

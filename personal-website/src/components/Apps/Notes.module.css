@@ -1,4 +1,26 @@
-.draggableContainer {
-    width: 100vw;
-    height: 100vh;
+.notesApp {
+    display: flex;
+    flex-direction: row;
+    border: var(--app-border);
+    border-radius: var(--app-border-radius);
+}
+
+.flexColumn {
+    display: flex;
+    flex-direction: column;
+}
+
+.notesNav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: var(--nav-padding);
+}
+
+.navContent {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: var(--nav-content-height);
+    padding: 0 var(--nav-padding);
 }
